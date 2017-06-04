@@ -8,7 +8,7 @@ This project uses a RN2903A, on a breakout purchased from Azzy's Electronics on 
 
 [Azzys Electronics](http://drazzy.com/e/)
 
-[Azzys Electronics on Tinie](https://www.tindie.com/stores/DrAzzy/)
+[Azzys Electronics on Tindie](https://www.tindie.com/stores/DrAzzy/)
 
 [Assembled breakout w RN2903 or RN2483](https://www.tindie.com/products/DrAzzy/lorawan-rn2483rn2903-breakout-board-assembled/)
 
@@ -21,5 +21,7 @@ The setup, used is the top one pictured below:
 On the RPi, UART must be enabled and the serial console must be turned off. 
 
 I haven't configured RTS/CTS yet, on the RPi, but it doesn't seem to be needed so far.
+
+Here's a look using AdaFruit T Cobbler:
 
 ![RPI Zero and RN3903 over UART](https://github.com/miguellan/python-lorawan-RN2XX3/blob/master/RN2903.jpg?raw=true)
