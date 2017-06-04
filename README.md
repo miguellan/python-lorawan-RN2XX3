@@ -22,6 +22,6 @@ On the RPi, UART must be enabled and the serial console must be turned off.
 
 I haven't configured RTS/CTS yet, on the RPi, but it doesn't seem to be needed so far.
 
-Here's a look using AdaFruit T Cobbler:
+Here's the setup, using AdaFruit T Cobbler, RPi Zero and breakout:
 
 ![RPI Zero and RN3903 over UART](https://github.com/miguellan/python-lorawan-RN2XX3/blob/master/RN2903.jpg?raw=true)
