@@ -2,7 +2,7 @@
 
 http://ww1.microchip.com/downloads/en/DeviceDoc/40001811A.pdf
 
-This is the start of a python wrapper around the serial command API for Microchip RN2483 and RN2903 LoRaWAN using Tindie breakout.
+This is the start of a python wrapper around the serial command API for Microchip RN2483 and RN2903 LoRaWAN using Tindie breakout.  The goal, is to create a simple library, for making LoRa nodes on a LoRaWAN.
 
 This project uses a RN2903A, on a breakout purchased from Azzy's Electronics on Tindie.
 
