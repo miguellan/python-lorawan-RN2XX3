@@ -12,6 +12,7 @@ https://www.tindie.com/products/DrAzzy/lorawan-rn2483rn2903-breakout-board-assem
 
 This breakout is directly powered and connected by a Raspberry Pi Zero with Wifi and Ble (not a ZeroW, but technically the same).  The wiring for this is shown on the Tindie site above, where you can buy the breakouts, or below for convenience.
 
+The setup, used is the top one pictured below:
 ![Wiring Diagram](http://drazzy.com/e/products/img/RN2483diagram2.jpg)
 
 
