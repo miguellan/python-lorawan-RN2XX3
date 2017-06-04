@@ -8,7 +8,7 @@ This project uses a RN2903A, on a breakout purchased from Azzy's Electronics on 
 
 [Azzys Electronics](http://drazzy.com/e/)
 
-[[Azzys Electronics on Tinie](https://www.tindie.com/stores/DrAzzy/)
+[Azzys Electronics on Tinie](https://www.tindie.com/stores/DrAzzy/)
 
 [Assembled breakout w RN2903 or RN2483](https://www.tindie.com/products/DrAzzy/lorawan-rn2483rn2903-breakout-board-assembled/)
 
