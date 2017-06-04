@@ -36,7 +36,7 @@
 # Wrapper around RN2903 and RN2483 LoraWAN 
 # modules' serial command interface from Microchip
 # version: 0.1
-# TODO: finish command set and functionality
+# TODO: finish command set and functionality, and add error checking, etc.
 # http://ww1.microchip.com/downloads/en/DeviceDoc/40001811A.pdf
 #=======================================================
 
@@ -51,15 +51,58 @@ class RN2XX3:
     ser = 0
     CRLF = "\r\n"
     COMMANDS = {
+        "SYS_SLEEP":b"sys sleep {}" + CRLF,
+        "SYS_RST":b"sys reset" + CRLF,
+        "SYS_FACRST":b"sys factoryRESET" + CRLF,
+        "SYS_ERASEFW":b"sys eraseFW" + CRLF,
+
         "SYS_VER":b"sys get ver" + CRLF,
         "SYS_VDD":b"sys get vdd" + CRLF,
         "SYS_HWEUI":b"sys get hweui" + CRLF,
         "SYS_NVMAT":b"sys get nvm {}" + CRLF,
-        "SYS_SLEEP":b"sys sleep {}" + CRLF,
-        "SYS_RST":b"sys reset" + CRLF,
+        
         "SYS_NVMSET":b"sys set nvm {} {}" + CRLF,
-
+        "SYS_PINCFG":b"sys set pindig {0} {1}" + CRLF,
+        
+        "MAC_RSTBAND":b"mac reset {}" + CRLF,
+        "MAC_TX":b"mac tx {0} {1} {2}" + CRLF,
+        "MAC_SAVE":b"mac save" + CRLF,
+        "MAC_PAUSE":b"mac pause" + CRLF,
+        "MAC_RESUME":b"mac resume" + CRLF,
+        
+        "MAC_DEVADDR":b"mac get devaddr" + CRLF,
         "MAC_DEVEUI":b"mac get deveui" + CRLF,
+        "MAC_APPEUI":b"mac get appeui" + CRLF,
+        "MAC_DR":b"mac get dr" + CRLF,
+        "MAC_BAND":b"mac get band" + CRLF,
+        "MAC_PWRIDX":b"mac get pwridx" + CRLF,
+        "MAC_ADR":b"mac get adr" + CRLF,
+        "MAC_RETX":b"mac get retx" + CRLF,
+        "MAC_RXDELAY1":b"mac get rxdelay1" + CRLF,
+        "MAC_RXDELAY2":b"mac get rxdelay2" + CRLF,
+        "MAC_AR":b"mac get ar" + CRLF,
+        "MAC_RX2":b"mac get rx2 {}" + CRLF,
+        "MAC_DYCLEPS":b"mac get dcycleps" + CRLF,
+        "MAC_MRGN":b"mac get mrgn" + CRLF,
+        "MAC_GWNB":b"mac get gwnb" + CRLF,
+        "MAC_STATUS":b"mac get status" + CRLF,
+
+        "MAC_DEVADDRSET":b"mac set devaddr {}" + CRLF,
+        "MAC_DEVEUISET":b"mac set deveui {}" + CRLF,
+        "MAC_APPEUISET":b"mac set appeui {}" + CRLF,
+        "MAC_NWKSKEYSET":b"mac set nwkskey {}" + CRLF,
+        "MAC_APPSKEYSET":b"mac set appskey {}" + CRLF,
+        "MAC_PWRIDXSET":b"mac set pwridx {}" + CRLF,
+        "MAC_DRSET":b"mac set dr {}" + CRLF,
+        "MAC_ADRSET":b"mac set adr {}" + CRLF,
+        "MAC_BATSET":b"mac set bat {}" + CRLF,
+        "MAC_RETXSET":b"mac set retx {}" + CRLF,
+        "MAC_LINKCHKSET":b"mac set linkchk {}" + CRLF,
+        "MAC_RXDELAY1SET":b"mac set rxdelay1 {}" + CRLF,
+        "MAC_ARSET":b"mac set ar {}" + CRLF,
+        "MAC_RXSET":b"mac set rx2 {0} {1}" + CRLF,
+        
+
         }
 
     def init(self):
