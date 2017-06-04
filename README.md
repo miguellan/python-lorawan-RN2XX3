@@ -25,3 +25,5 @@ I haven't configured RTS/CTS yet, on the RPi, but it doesn't seem to be needed s
 Here's the setup, using AdaFruit T Cobbler, RPi Zero and breakout:
 
 ![RPI Zero and RN3903 over UART](https://github.com/miguellan/python-lorawan-RN2XX3/blob/master/RN2903.jpg?raw=true)
+
+If you want to contribute, please fork, and create a pull request with your changes.
