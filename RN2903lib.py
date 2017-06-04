@@ -37,6 +37,7 @@
 # modules' serial command interface from Microchip
 # version: 0.1
 # TODO: finish command set and functionality
+# http://ww1.microchip.com/downloads/en/DeviceDoc/40001811A.pdf
 #=======================================================
 
 import serial
