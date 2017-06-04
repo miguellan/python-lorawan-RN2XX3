@@ -6,11 +6,11 @@ This is the start of a python wrapper around the serial command API for Microchi
 
 This project uses a RN2903A, on a breakout purchased from Azzy's Electronics on Tindie.
 
-![Azzys Electronics](http://drazzy.com/e/)
+[Azzys Electronics](http://drazzy.com/e/)
 
-![[Azzys Electronics on Tinie](https://www.tindie.com/stores/DrAzzy/)
+[[Azzys Electronics on Tinie](https://www.tindie.com/stores/DrAzzy/)
 
-![Assembled breakout w RN2903 or RN2483](https://www.tindie.com/products/DrAzzy/lorawan-rn2483rn2903-breakout-board-assembled/)
+[Assembled breakout w RN2903 or RN2483](https://www.tindie.com/products/DrAzzy/lorawan-rn2483rn2903-breakout-board-assembled/)
 
 This breakout is directly powered and connected by a Raspberry Pi Zero with Wifi and Ble (not a ZeroW, but technically the same).  The wiring for this is shown on the Tindie site above, where you can buy the breakouts, or below for convenience.
 
