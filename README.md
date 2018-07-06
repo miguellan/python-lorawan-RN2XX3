@@ -27,3 +27,29 @@ Here's the setup, using AdaFruit T Cobbler, RPi Zero and breakout:
 ![RPI Zero and RN3903 over UART](https://github.com/miguellan/python-lorawan-RN2XX3/blob/master/RN2903.jpg?raw=true)
 
 The goal of this project, is to create a simple library, and starting point, for anyone evaluating RN2XX3 LoRaWAN chips.  If you found this repo helpful, and want to contribute.  Please fork, and create a pull request with your changes, and it will be merged.
+
+# micropython
+Added some basic code to support micropython. The connections made:
+
+RN2483 | LABEL | HOST 
+ --- | --- | ---
+1 | GND
+2 | RTS | not connected
+3 | CTS | not connected
+6 | TXD | PA1-RX-UART4
+7 | RXD | PA0-TX-UART4
+12| 3.3V|
+32|/RESET| PA5-GPIO
+
+Session output:
+```
+>>> execfile("RN2903lib.py")
+CHIP FIRMWARE VERSION IS: b'RN2483 0.9.5 Mar 24 2015 14:15:33\r\n'
+CHIP HARDWARE EUI IS: b'RN2483 0.9.5 Mar 24 2015 14:15:33\r\n'
+CHIP VDD READING IS: b'0004A30B001A7F98\r\n'
+CHIP MAC DEVEUI IS: b'3243\r\n'
+SLEEPING WITH RN2XX3 CHIP b'0004A30B001A7F98\r\n'
+SETTING NVM AT 3FF TO 88: b'ok\r\n'
+NVM MEMORY VALUE AT: 3FF IS: b'88\r\n'
+RESETTING CLIENT b'RN2483 0.9.5 Mar 24 2015 14:15:33\r\n'
+```
